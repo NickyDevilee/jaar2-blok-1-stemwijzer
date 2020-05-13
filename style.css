@@ -1,0 +1,25 @@
+/*Nicky Devilee - 99047338
+Opdracht back-end*/
+
+body{
+    background-image: url('img/background.jpg');
+    font-family: 'Poppins', sans-serif;
+    -webkit-user-select: none;      
+    -moz-user-select: none;
+    -ms-user-select: none
+    user-select: none;
+}
+
+#maindiv{
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#stelling{
+    text-align: center;
+}
+
+.clicked{
+    color: red;
+}

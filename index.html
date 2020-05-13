@@ -1,0 +1,63 @@
+<!-- 
+Nicky Devilee - 99047338
+Opdracht back-end
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <title>Stemwijzer</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="maindiv">
+                <div class="text-center">
+                    <h1 id="titel"></h1>
+                    <p id="mening"></p>
+                </div>
+                <div class="text-center">
+                    <button id="startbtn" class="btn btn-primary" onclick="start()">Starten</button>
+                    <button id="backbtn" class="btn btn-dark" onclick="back()"><i class="fa fa-arrow-left" aria-hidden="false"></i>terug</button> 
+                    <button id="oneensbtn" class="btn btn-danger m-3" onclick="vote('contra')">Oneens</button>
+                    <button id="geenbtn" class="btn btn-warning m-3" onclick="vote('none')">Geen mening</button>
+                    <button id="eensbtn" class="btn btn-success m-3" onclick="vote('pro')">Eens</button>
+                    <button id="finishbtn" class="btn btn-dark" onclick="finish()">Klaar</button>   
+                    <button id="partijbtn" class="btn btn-info" onclick="partyOpininon()">mening</button>
+                    <button id="bigPartiesButton" onclick="toggleAllParties('big')" class="btn btn-info">Zie de grote partijen.</button>
+                    <button id="secularPartiesButton" onclick="toggleAllParties('secular')" class="btn btn-info">Zie de seculiere partijen.</button>
+                    <button id="resultbtn" class="btn btn-dark" onclick="results()">klaar</button>                  
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="partijen">
+                    </div>
+                    <div class="col-md-12" id="titeldiv">
+                        <h1>Kies de vragen die meer meetellen</h1>
+                    </div>
+                    <div class="col-md-12" id="resultdiv">
+                        <h1>Resultaten</h1>
+                    </div>
+
+                </div>
+                <div id="bigParties" style="display: none;">
+                </div>
+            
+                <div id="secularParties" style="display: none;">
+                </div>
+           
+                </div>
+            </div>
+        </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
