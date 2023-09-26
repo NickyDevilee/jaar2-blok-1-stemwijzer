@@ -1,6 +1,7 @@
 // Nicky Devilee - 99047338
 // Opdracht back-end
 
+
 var titel = document.getElementById('titel');
 var mening = document.getElementById('mening');
 
